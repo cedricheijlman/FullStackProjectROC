@@ -1,0 +1,136 @@
+.allPosts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  min-width: 200px;
+  width: 90%;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 440px) {
+  .allPosts {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .allPosts {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .allPosts {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .allPosts {
+    padding-left: 70px;
+  }
+}
+
+.postitem {
+  background-color: white;
+  width: 87%;
+  height: auto;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.postitem p {
+  margin: 10px;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+
+.postProfileBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.usernameAndDate {
+  display: flex;
+  flex-direction: column;
+}
+
+.usernameAndDate h4 {
+  font-size: 19px;
+}
+
+.usernameAndDate p {
+  margin: 0;
+  font-size: 13px;
+  color: gray;
+}
+
+.postContentText {
+  padding-top: 10px;
+}
+
+.postProfileBox img {
+  border-radius: 8px;
+  width: 40px;
+  margin-right: 10px;
+  height: 40px;
+}
+
+.postActions {
+  justify-content: space-between;
+  border-top: 1px solid rgb(207, 207, 207);
+  margin-top: 10px;
+  display: flex;
+  padding: 5px;
+  padding-top: 12px;
+  align-items: center;
+}
+
+.likeBox i {
+  margin-right: 7px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.likeBox {
+  display: flex;
+}
+
+.likeBox i:hover {
+  color: gray;
+}
+
+.deleteOrEditBox {
+  display: flex;
+  align-items: center;
+}
+
+.postBtnAction {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px;
+
+  margin: 0 5px;
+}
+
+.postBtnAction a {
+  color: black;
+}
+
+.deleteBtnPost a {
+  color: red;
+}
+
+.postBtnAction:hover {
+  transform: scale(1.1);
+}
+
+.like,
+.unlike {
+  background: none;
+}

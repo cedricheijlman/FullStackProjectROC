@@ -1,0 +1,176 @@
+@import "containers.css";
+@import "nav.css";
+.settingsbox {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  font-family: "lato";
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: white;
+  width: 90%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+form {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.settingsbox h2 {
+  margin: 25px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  letter-spacing: 0.2px;
+
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+label {
+  font-weight: 800;
+}
+
+input,
+label {
+  margin: 10px 30px;
+}
+
+input[type="file"] {
+  width: 250px;
+}
+
+.editprofilebtn {
+  font-weight: 800;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #0984e3;
+  border-radius: 10px;
+  color: #ffffff;
+  height: 45px;
+  width: 100px;
+  font-family: "Lato";
+
+  transition: all 0.5s;
+}
+
+.editprofilebtn:hover {
+  transform: scale(1.1);
+}
+
+.settingsbox input[type="file"]:focus,
+.settingsbox input[type="file"]:active {
+  border: none;
+}
+
+.settingsbox input:focus,
+.settingsbox input:active {
+  border: 2px solid blue;
+  background-color: rgba(0, 0, 255, 0.055);
+}
+
+.deleteAccountButton {
+  cursor: pointer;
+  border: 1px solid rgb(179, 70, 70);
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px 7px;
+  position: absolute;
+  right: 30px;
+  bottom: 23px;
+  transition: ease-in-out 0.5s;
+  font-weight: 800;
+}
+
+.deleteAccountButton:hover {
+  color: white;
+  background-color: red;
+  transform: scale(1.1);
+}
+
+.deleteAccountModal {
+  background-color: rgba(0, 0, 0, 0.103);
+  z-index: 999999;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.noHidden {
+  display: flex;
+}
+
+.closeIconDeleteAccount {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.deleteAccountModal a {
+  color: black;
+}
+
+.deleteAccountModal a:hover {
+  color: white;
+}
+
+.deleteAccountModal form {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+  position: relative;
+  min-width: 250px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  display: flex;
+  background-color: white;
+}
+
+.buttonboxDelete {
+  margin-top: 30px;
+  display: flex;
+}
+
+.buttonboxDelete button {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 8px;
+  transition: ease-in-out 0.5s;
+}
+
+.buttonboxDelete button:hover {
+  transform: scale(1.1);
+}
+
+.buttonboxDelete button:nth-child(1) {
+  border: 1px solid rgba(255, 0, 0, 0.877);
+}
+
+.buttonboxDelete button:nth-child(1):hover {
+  background-color: rgba(255, 0, 0, 0.877);
+  color: white;
+}
